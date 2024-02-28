@@ -1,0 +1,19 @@
+***************** AIRLINE RESERVATION SYSTEM ***********************
+
+AIM: 
+	This system is to help passengers in reserving their tickets online in an efficient manner by viewing the available flight.
+
+DESCRIPTION:
+	This system will allow the user to view the flights,bookings and booking their ticket and also cancel the reservation.This provides a lot of ease to the passengers.  
+
+WORKING: 
+	This system implements database connectivity. It is a menu driven program having four functions. The database airline has two tables booking and flight. 
+1. In bookFlight() the user need to input the user details and the origin, destiantion and flight number of the flight they want to book ticket. If the user entered a different flight number or origin the ticket will not be booked. A seat number is generated randomly and it is added to bookings table.
+
+2. In viewFlights() it list all the flights from the table.
+
+3. In cancelReservation() the user can cancel the reserved tickets by entering name,flight number and email id.
+
+4. In dispBookings() we can view all the bookings done.
+
+(There is another function generateSeatNumber to generate the seat number randomly.)

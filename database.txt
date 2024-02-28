@@ -1,0 +1,16 @@
+Database :airline
+create database airline;
+
+Table:
+
+1.flight
+create table flight(flight_number varchar(11), origin varchar(25), destination varchar(25), departure_time varchar(11), arrival_time varchar(11));
+
+2. bookings
+create table bookings(passenger_name varchar(25), origin varchar(20), dest varchar(20), email varchar(20), flight_number varchar(11), pass varchar(20), seat_number varchar(11) foreign key(flight_number) references flight(flight_number));
+
+Insertion in flight:
+
+insert into flight values('1011','kannur','oman','12am','04am');
+insert into flight values('1012','Kochi','Kannur','6pm','8:30pm');
+
